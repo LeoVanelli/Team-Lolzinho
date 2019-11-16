@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simulador</title>
+    <link rel="stylesheet" href="../CSS/index.css">
+    <script src="../JS/index.js"></script>
+</head>
+<body>
+    
+    <div id="logo">
+        <img src="../img/logo.png" onclick="index()" alt="logo pagina">
+    </div>
+    <div id="SelectTop">
+        <h2><img src="../img/Logos Lanes/top.png " alt="logo top">Top Lane: </h2>
+        <div class="wrap">
+            <img src="../img/top/hecarim.jpg" onclick="hecarim(), listar()" id="hecarim" class="personagens" alt="hecarim">
+        </div>
+        <div class="wrap">
+            <img src="../img/top/gnar.jpg" onclick="gnar(), listar()" id="gnar" class="personagens" alt="gnar">
+        </div>
+        <div class="wrap">
+            <img src="../img/top/irelia.jpg" onclick="irelia(), listar()" id="irelia" class="personagens" alt="irelia">
+        </div>
+        <div class="wrap">
+            <img src="../img/top/lissandra.jpg" onclick="lissandra(), listar()" id="lissandra"  class="personagens" alt="lissandra">
+        </div>
+        <div class="wrap">
+            <img src="../img/top/Sion.jpg" onclick="sion(), listar()" id="sion" class="personagens" alt="sion">
+        </div>
+    </div>
+
+    <div id="SelectMid">
+        <h2><img src="../img/Logos Lanes/mid.png " alt="logo top">Mid Lane: </h2>
+        <div class="wrap">
+            <img src="../img/mid/yasuo.jpg" onclick="yasuo(), listar()" id="yasuo" class="personagens" alt="God">
+        </div>
+        <div class="wrap">
+            <img src="../img/mid/annie.jpg" onclick="annie(), listar()" id="annie" class="personagens" alt="annie">
+        </div>
+        <div class="wrap">
+            <img src="../img/mid/diana.jpg" onclick="diana(), listar()" id="diana" class="personagens" alt="diana">
+        </div>
+        <div class="wrap">
+            <img src="../img/mid/katarina.jpg" onclick="katarina(), listar()" id="katarina" class="personagens" alt="katarina">
+        </div>
+        <div class="wrap">
+            <img src="../img/mid/ahri.jpg" onclick="ahri(), listar()" id="ahri" class="personagens" alt="ahri">
+        </div>
+    </div>
+
+    <div id="SelectJungle">
+        <h2><img src="../img/Logos Lanes/jungle.png " alt="logo top">Jungle/Selva: </h2>
+        <div class="wrap">
+            <img src="../img/jungle/amumu.jpg" onclick="amumu(), listar()" id="amumu" class="personagens" alt="God">
+        </div>
+        <div class="wrap">
+            <img src="../img/jungle/master yi.jpg" onclick="master_yi(), listar()" id="master_yi" class="personagens" alt="annie">
+        </div>
+        <div class="wrap">
+            <img src="../img/jungle/jarvan.jpg" onclick="jarvan(), listar()" id="jarvan" class="personagens" alt="diana">
+        </div>
+        <div class="wrap">
+            <img src="../img/jungle/nidalee.jpg" onclick="nidalee(), listar()" id="nidalee" class="personagens" alt="katarina">
+        </div>
+        <div class="wrap">
+            <img src="../img/jungle/vi.jpg" onclick="vi(), listar()" id="vi" class="personagens" alt="ahri">
+        </div>
+    </div>
+
+    <div id="SelectAdc">
+        <h2><img src="../img/Logos Lanes/bot.png " alt="logo top">Ad-Carry: </h2>
+        <div class="wrap">
+            <img src="../img/adc/corki.jpg" onclick="corki(), listar()" id="corki" class="personagens" alt="corki">
+        </div>
+        <div class="wrap">
+            <img src="../img/adc/graves.jpg" onclick="graves(), listar()" id="graves" class="personagens" alt="graves">
+        </div>
+        <div class="wrap">
+            <img src="../img/adc/jinx.jpg" onclick="jinx(), listar()" id="jinx" class="personagens" alt="jinx">
+        </div>
+        <div class="wrap">
+            <img src="../img/adc/kalista.jpg" onclick="kalista(), listar()" id="kalista" class="personagens" alt="kalista">
+        </div>
+        <div class="wrap">
+            <img src="../img/adc/sivir.jpg" onclick="sivir(), listar()" id="sivir" class="personagens" alt="sivir">
+        </div>
+    </div>
+
+    <div id="SelectSup">
+        <h2><img src="../img/Logos Lanes/suporte.png " alt="logo top">Suporte: </h2>
+        <div class="wrap">
+            <img src="../img/suporte/blitzcranck.jpg" onclick="blitzcranck(), listar()" id="blitzcranck" class="personagens" alt="blitzcranck">
+        </div>
+        <div class="wrap">
+            <img src="../img/suporte/janna.jpg" onclick="janna(), listar()" id="janna" class="personagens" alt="janna">
+        </div>
+        <div class="wrap">
+            <img src="../img/suporte/leona.jpg" onclick="leona(), listar()" id="leona" class="personagens" alt="leona">
+        </div>
+        <div class="wrap">
+            <img src="../img/suporte/morgana.jpg" onclick="morgana(), listar()" id="morgana" class="personagens" alt="morgana">
+        </div>
+        <div class="wrap">
+            <img src="../img/suporte/thresh.jpg" onclick="thresh(), listar()" id="thresh" class="personagens" alt="thresh">
+        </div>
+    </div>
+
+
+    <div id="btn1" class="Container">
+        <div class="Buttons">
+              <a class="Button" onclick="concluirtop()">
+                Próxima Lane
+                <span class="Button-mask Button-slides slides-left Graident-one">
+                </span>
+              </a>
+        </div>
+    </div>
+
+    <div id="btn2" class="Container">
+            <div class="Buttons">
+                  <a class="Button" onclick="concluirmid()">
+                    Próxima Lane
+                    <span class="Button-mask Button-slides slides-left Graident-one">
+                    </span>
+                  </a>
+            </div>
+        </div>
+
+        <div id="btn3" class="Container">
+            <div class="Buttons">
+                  <a class="Button" onclick="concluirjungle()">
+                    Próxima Lane
+                    <span class="Button-mask Button-slides slides-left Graident-one">
+                    </span>
+                  </a>
+            </div>
+        </div>
+
+        <div id="btn4" class="Container">
+            <div class="Buttons">
+                  <a class="Button" onclick="concluiradc()">
+                    Próxima Lane
+                    <span class="Button-mask Button-slides slides-left Graident-one">
+                    </span>
+                  </a>
+            </div>
+        </div>
+
+        <div id="btn5" class="Container">
+            <div class="Buttons">
+                  <a class="Button" onclick="concluirsup()">
+                    Concluir
+                    <span class="Button-mask Button-slides slides-left Graident-one">
+                    </span>
+                  </a>
+            </div>
+        </div>
+
+    <div id="lista">
+        <p>Time: </p>
+        <p id="top"></p>
+        <p id="mid"></p>
+        <p id="jungle"></p>
+        <p id="adc"></p>
+        <p id="sup"></p>
+    </div>
+</body>
+</html>

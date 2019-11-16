@@ -1,0 +1,277 @@
+@font-face {
+    font-family: "Friz Quadrata";
+    src: url("../fontes/Friz\ Quadrata\ Regular.ttf"),
+    url("../fontes/Friz\ Quadrata\ Bold.otff") format("opentype");
+}
+
+.personagens{
+    height: 165px;
+    width: 165px;
+    margin-top: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#logo{
+    text-align: center;
+    height: 110px;
+}
+
+#logo img{
+    text-align: center;
+    height: 120px;
+    cursor: pointer;
+}
+
+h2{
+    margin-left: 68px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Friz Quadrata;
+    color: #dbb50b;
+}
+h2 img{
+    height: 60px;
+    margin-right: 10px;
+    margin-bottom: -10px;
+}
+
+body{
+    background-image: url(../img/fundo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#lista{
+    position: absolute;
+    color: rgb(57, 38, 236);
+    font-size: 26px;
+    font-weight: bold;
+    font-family: Friz Quadrata;
+    left: 75%;
+    top: 30%;
+}
+
+p{
+    margin-top: -20px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .Container {
+    margin-top: 250px;
+    margin-left: 80px;
+    width: 250px;
+    cursor: pointer;
+  }
+  .Button {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    font-family: Friz Quadrata;
+    font-size: 1.125rem;
+    font-weight: 500;
+    letter-spacing: 0.0625rem;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    will-change: transform;
+    z-index: 1;
+  }
+  .Button-mask {
+    position: absolute;
+    transition: -webkit-transform 0.425s ease-in-out;
+    transition: transform 0.425s ease-in-out;
+    transition: transform 0.425s ease-in-out, -webkit-transform 0.425s ease-in-out;
+    z-index: -1;
+  }
+  .Button-mask.slides-left {
+    left: 0;
+  }
+  .Button-mask.slides-right {
+    right: 0;
+  }
+  .Button-slides {
+    top: 0;
+    width: 200%;
+    height: 100%;
+  }
+  .Button-rotates {
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 600%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+            transform: translate3d(-50%, -50%, 0);
+  }
+  .Button:hover .Button-mask.slides-left {
+    -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+  }
+  .Graident-one {
+    background: linear-gradient(155deg, #cce012 0%, #183ad1 100%);
+  }
+
+  /* Top */
+
+  #hecarim{
+    position: absolute;
+    margin-left: 5%;
+  }
+  #gnar{
+    position: absolute;
+    margin-left: 19%;
+  }
+
+  #irelia{
+    position: absolute;
+    margin-left: 33%;
+  }
+
+  #lissandra{
+    position: absolute;
+    margin-left: 47%;
+  }
+
+  #sion{
+    position: absolute;
+    margin-left: 61%;
+  }
+
+  /* Mid */
+
+  #yasuo{
+    position: absolute;
+    margin-left: 5%;
+  }
+  #annie{
+    position: absolute;
+    margin-left: 19%;
+  }
+
+  #diana{
+    position: absolute;
+    margin-left: 33%;
+  }
+
+  #katarina{
+    position: absolute;
+    margin-left: 47%;
+  }
+
+  #ahri{
+    position: absolute;
+    margin-left: 61%;
+  }
+
+  /* jungle */
+
+  #amumu{
+    position: absolute;
+    margin-left: 5%;
+  }
+  #master_yi{
+    position: absolute;
+    margin-left: 19%;
+  }
+
+  #jarvan{
+    position: absolute;
+    margin-left: 33%;
+  }
+
+  #nidalee{
+    position: absolute;
+    margin-left: 47%;
+  }
+
+  #vi{
+    position: absolute;
+    margin-left: 61%;
+  }
+
+  /* adc */
+
+    #corki{
+    position: absolute;
+    margin-left: 5%;
+  }
+  #graves{
+    position: absolute;
+    margin-left: 19%;
+  }
+
+  #jinx{
+    position: absolute;
+    margin-left: 33%;
+  }
+
+  #kalista{
+    position: absolute;
+    margin-left: 47%;
+  }
+
+  #sivir{
+    position: absolute;
+    margin-left: 61%;
+  }
+
+  /*suporte*/
+
+    #blitzcranck{
+    position: absolute;
+    margin-left: 5%;
+  }
+  #janna{
+    position: absolute;
+    margin-left: 19%;
+  }
+
+  #leona{
+    position: absolute;
+    margin-left: 33%;
+  }
+
+  #morgana{
+    position: absolute;
+    margin-left: 47%;
+  }
+
+  #thresh{
+    position: absolute;
+    margin-left: 61%;
+  }
+
+.wrap {
+  display: flex;
+}
+
+.wrap img {
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 99%;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  }
+
+.wrap img:hover {
+  background-color: #2EE59D;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
